@@ -59,6 +59,6 @@ int main()
 {
 	std::string infix, postfix;
 	std::getline(std::cin, infix);
-	postfix =  infix_to_postfix(infix);
+	postfix = infix_to_postfix(infix);
 	std::cout << postfix;
 }
