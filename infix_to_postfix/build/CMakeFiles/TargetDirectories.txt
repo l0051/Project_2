@@ -1,0 +1,3 @@
+/home/lusine/Desktop/www/project_2/infix_to_postfix/build/CMakeFiles/rebuild_cache.dir
+/home/lusine/Desktop/www/project_2/infix_to_postfix/build/CMakeFiles/edit_cache.dir
+/home/lusine/Desktop/www/project_2/infix_to_postfix/build/CMakeFiles/exec.dir
