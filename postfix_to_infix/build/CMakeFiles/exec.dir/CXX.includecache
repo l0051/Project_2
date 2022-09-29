@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lusine/Desktop/www/project_2/postfix_to_infix/postfix_to_infix.cpp
+iostream
+-
+stack
+-
+string
+-
+
