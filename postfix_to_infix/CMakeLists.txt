@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.13)
 
-project(infix_to_postfix)
+project(postfix_to_infix)
 
 set(CMAKE_CXX_STANDART 14)
 
