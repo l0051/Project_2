@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/exec.dir/infix_to_postfix.cpp.o  -o exec 
