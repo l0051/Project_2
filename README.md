@@ -10,7 +10,7 @@ Then run in terminal:
 	make
 
 For running write in terminal:
-	./ecex
+	./exec
 Then you should enter one string as input.
 
 
@@ -23,7 +23,7 @@ Then run in terminal:
         make
 
 For running write in terminal:
-        ./ecex
+        ./exec
 Then you should enter one string as input.
 
 
@@ -36,6 +36,6 @@ Then run in terminal:
         make
 
 For running write in terminal:
-        ./ecex
+        ./exec
 Then you should enter one string as input.
 
