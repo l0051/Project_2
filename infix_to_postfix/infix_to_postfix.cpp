@@ -17,13 +17,15 @@ std::string infix_to_postfix(const std::string& infix)
 {
 	std::stack<char> st;
 	std::string postfix;
-	char current;
+    bool is_last_digit = false;
 	for (char current : infix)
 	{
 		if (is_operator(current))
 		{
+            is_last_digit = false;
 			while (!st.empty() && st.top() != '(' && priority(st.top()) >= priority(current))
 			{
+                postfix.push_back(' ');
 				postfix.push_back(st.top());
 				st.pop();
 			}
@@ -31,24 +33,32 @@ std::string infix_to_postfix(const std::string& infix)
 		}
 		else if (current == '(')
 		{
+            is_last_digit = false;
 			st.push(current);
 		}
 		else if (current == ')')
 		{
+            is_last_digit = false;
 			while (!st.empty() && st.top() != '(')
 			{
+                if (!postfix.empty())
+                    postfix.push_back(' ');
 				postfix.push_back(st.top());
-                                st.pop();
+                st.pop();
 			}
 			st.pop();
 		}
-		else
+		else if (current != ' ')
 		{
-			postfix.push_back(current);
+            if (!is_last_digit && !postfix.empty())
+                postfix.push_back(' ');
+            postfix.push_back(current);
+            is_last_digit = true;
 		}
 	}
 	while (!st.empty())
 	{
+        postfix.push_back(' ');
 		postfix.push_back(st.top());
 		st.pop();
 	}
