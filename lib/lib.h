@@ -28,4 +28,4 @@ std::string splited_to_line(const std::vector<std::string>& splited);
 
 void infix_to_postfix(const std::string& infix);
 
-#endif //INFIX_TO_POSTFIX_LIB_H
+#endif
