@@ -1,6 +1,7 @@
 #include <iostream>
-#include <stack>
 #include <string>
+
+#include "../lib/lib.h"
 
 bool is_operator(char symbol)
 {
