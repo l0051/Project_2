@@ -9,9 +9,7 @@
 
 int priority(const std::string& current_operator)
 {
-    if (current_operator == "*" || current_operator == "/")
-        return 3;
-    if (current_operator == "%")
+    if (current_operator == "*" || current_operator == "/" || current_operator == "%")
         return 2;
     if (current_operator == "+" || current_operator == "-")
         return 1;
@@ -116,7 +114,6 @@ bool is_valid_infix(const std::vector<std::string>& infix)
     return counter == 1 && par_counter == 0;
 }
 
-
 std::string infix_to_postfix_util(const std::vector<std::string>& splited_infix)
 {
     std::stack<std::string> st;
@@ -173,6 +170,34 @@ std::string splited_to_line(const std::vector<std::string>& splited)
     return line;
 }
 
+std::string postfix_to_infix_util(const std::vector<std::string>& splited_postfix)
+{
+    std::stack<std::string> st;
+    std::string op;
+    char last_operation_priority = 2;
+    for (const std::string& current : splited_postfix)
+    {
+        if (is_operator(current))
+        {
+            op = st.top();
+            st.pop();
+            if (last_operation_priority < priority(current))
+            {
+                op = "(" + op + ")";
+            }
+            op = st.top() + " " + current + " " + op;
+            st.pop();
+            st.push(op);
+            last_operation_priority = priority(current);
+        }
+        else
+        {
+            st.push(current);
+        }
+    }
+    return st.top();
+}
+
 void infix_to_postfix(const std::string& infix)
 {
     std::vector<std::string> splited_infix = split(infix);
@@ -184,7 +209,38 @@ void infix_to_postfix(const std::string& infix)
     }
 
     std::string postfix = infix_to_postfix_util(splited_infix);
-    std::vector<std::string> splited_postfix = split(postfix);
 
     std::cout << postfix << std::endl;
+}
+
+void postfix_to_infix(const std::string& postfix)
+{
+    std::vector<std::string> splited_postfix = split(postfix);
+
+    if (!is_valid_postfix(splited_postfix))
+    {
+        std::cout << "Wrong input" << std::endl;
+        return;
+    }
+
+    std::string infix = postfix_to_infix_util(splited_postfix);
+
+    std::cout << infix << std::endl;
+}
+
+void count_each_word_occupancy(const std::string& given_string)
+{
+    std::map<std::string, int> occupancy;
+    const std::regex white_space(" ");
+    std::vector<std::string> words(std::sregex_token_iterator(given_string.begin(),
+                                                              given_string.end(), white_space, -1), {});
+    for (std::string current_word : words)
+    {
+        occupancy[current_word] += 1;
+    }
+
+    for (auto it = occupancy.begin(); it != occupancy.end(); ++it)
+    {
+        std::cout << it->first << ": " << it->second << std::endl;
+    }
 }

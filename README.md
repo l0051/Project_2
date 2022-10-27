@@ -10,8 +10,8 @@ Then run in terminal:
 	make
 
 For running write in terminal:
-	./exec
-Then you should enter one string as input.
+	./inf_to_post
+Then you should enter one line as an input.
 
 
 
@@ -23,8 +23,8 @@ Then run in terminal:
         make
 
 For running write in terminal:
-        ./exec
-Then you should enter one string as input.
+        ./post_to_inf
+Then you should enter one line as an input.
 
 
 
@@ -36,6 +36,6 @@ Then run in terminal:
         make
 
 For running write in terminal:
-        ./exec
-Then you should enter one string as input.
+        ./word_occup
+Then you should enter one line as an input.
 

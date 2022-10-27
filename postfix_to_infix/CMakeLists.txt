@@ -4,4 +4,6 @@ project(postfix_to_infix)
 
 set(CMAKE_CXX_STANDART 14)
 
-add_executable(exec postfix_to_infix.cpp)
+add_executable(post_to_inf ../lib/lib.cpp main.cpp)
+
+include_directories(../lib/)

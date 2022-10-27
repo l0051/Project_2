@@ -7,6 +7,7 @@
 #include <vector>
 #include <algorithm>
 #include <cctype>
+#include <regex>
 
 int priority(const std::string& current_operator);
 
@@ -26,6 +27,12 @@ std::string infix_to_postfix_util(const std::vector<std::string>& splited_infix)
 
 std::string splited_to_line(const std::vector<std::string>& splited);
 
+std::string postfix_to_infix_util(const std::vector<std::string>& splited_postfix);
+
 void infix_to_postfix(const std::string& infix);
+
+void postfix_to_infix(const std::string& postfix);
+
+void count_each_word_occupancy(const std::string& given_string);
 
 #endif
