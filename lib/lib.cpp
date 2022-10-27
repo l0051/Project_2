@@ -174,14 +174,14 @@ std::string postfix_to_infix_util(const std::vector<std::string>& splited_postfi
 {
     std::stack<std::string> st;
     std::string op;
-    char last_operation_priority = 2;
+    int last_operation_priority = 2;
     for (const std::string& current : splited_postfix)
     {
         if (is_operator(current))
         {
             op = st.top();
             st.pop();
-            if (last_operation_priority < priority(current))
+            if (last_operation_priority < priority(current) && op.find(' ') != std::string::npos)
             {
                 op = "(" + op + ")";
             }
