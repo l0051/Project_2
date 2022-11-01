@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "lib.h"
+#include "infix_postfix.h"
 
 int main()
 {

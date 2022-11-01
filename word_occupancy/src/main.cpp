@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "lib.h"
+#include "word_occupancy.h"
 
 int main()
 {

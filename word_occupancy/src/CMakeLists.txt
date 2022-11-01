@@ -4,6 +4,6 @@ project(word_occupancy)
 
 set(CMAKE_CXX_STANDART 14)
 
-add_executable(word_occup ../lib/lib.cpp main.cpp)
+add_executable(word_occup word_occupancy.cpp main.cpp)
 
-include_directories(../lib/)
+include_directories(../include/)
