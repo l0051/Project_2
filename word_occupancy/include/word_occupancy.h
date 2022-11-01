@@ -3,4 +3,6 @@
 
 void count_each_word_occupancy(const std::string& given_string);
 
+void path_or_str(int argc, char **argv);
+
 #endif

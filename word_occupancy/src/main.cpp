@@ -2,9 +2,7 @@
 #include <string>
 #include "word_occupancy.h"
 
-int main()
+int main(int argc, char **argv)
 {
-    std::string given_string;
-    std::getline(std::cin, given_string);
-    count_each_word_occupancy(given_string);
+    path_or_str(argc, argv);
 }
