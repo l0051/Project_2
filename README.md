@@ -14,7 +14,7 @@ To build execute the following commands:
 	5)  make
 
 To run execute the following command:
-	./inf_to_post
+	./inf_post
 Then you should enter one line as an input.
 
 
