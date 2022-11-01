@@ -23,15 +23,10 @@ bool is_valid_postfix(const std::vector<std::string>& postfix);
 
 bool is_valid_infix(const std::vector<std::string>& infix);
 
-std::string infix_to_postfix_splited_to_str(const std::vector<std::string>& splited_infix);
+void infix_to_postfix(const std::vector<std::string>& splited_infix);
 
-std::string splited_to_line(const std::vector<std::string>& splited);
+void postfix_to_infix(const std::vector<std::string>& splited_postfix);
 
-std::string postfix_to_infix_splited_to_str(const std::vector<std::string>& splited_postfix);
-
-void infix_to_postfix(const std::string& infix);
-
-void postfix_to_infix(const std::string& postfix);
-
+void change_infix_or_postfix(const std::string& line);
 
 #endif

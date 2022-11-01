@@ -1,41 +1,40 @@
-STL assignments
+STL project
 
 
 
-1) A project to convert infix to postfix
+1) A project to convert infix to postfix or postfix to infix
+	/infix_postfix
 
-For building make /build directory in infix_postfix/src/infix_to_postfix.
-Then run in terminal:
-	cmake ..
-	make
+To build execute the following commands:
 
-For running write in terminal:
+	1)  cd ./src
+	2)  mkdir build
+	3)  cd build
+	4)  cmake ..
+	5)  make
+
+To run execute the following command:
 	./inf_to_post
 Then you should enter one line as an input.
 
 
 
-2) A project to convert postfix to infix
+2) A project to count occupancy of each word in given string or file
+	/word_occopancy
 
-For building make /build directory in infix_postfix/src/postfix_to_infix.
-Then run in terminal:
-        cmake ..
-        make
+To build execute the following commands:
 
-For running write in terminal:
-        ./post_to_inf
+        1)  cd ./src
+        2)  mkdir build
+        3)  cd build
+        4)  cmake ..
+        5)  make
+
+To run execute on of the following commands:
+
+	1)  ./word_occup file_path
+This way it will count occupancy of each word in that file.
+
+	2) ./word_occup
 Then you should enter one line as an input.
-
-
-
-3) A project to count occupancy of each word in given string
-
-For building make /build directory in /word_occupancy/src.
-Then run in terminal:
-        cmake ..
-        make
-
-For running write in terminal:
-        ./word_occup
-Then you should enter one line as an input.
-
+This way it will count occupancy of each word in given line.

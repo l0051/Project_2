@@ -14,9 +14,13 @@
   <component name="ChangeListManager">
     <list default="true" id="bce69314-eaf5-4b60-a517-1970f9d40961" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/word_occupancy/include/word_occupancy.h" beforeDir="false" afterPath="$PROJECT_DIR$/word_occupancy/include/word_occupancy.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/word_occupancy/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/word_occupancy/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/word_occupancy/src/word_occupancy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/word_occupancy/src/word_occupancy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infix_postfix/include/infix_postfix.h" beforeDir="false" afterPath="$PROJECT_DIR$/infix_postfix/include/infix_postfix.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infix_postfix/src/infix_postfix.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/infix_postfix/src/infix_postfix.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infix_postfix/src/infix_to_postfix/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infix_postfix/src/infix_to_postfix/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infix_postfix/src/postfix_to_infix/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infix_postfix/src/postfix_to_infix/main.cpp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1666875796730</updated>
       <workItem from="1666875798093" duration="6057000" />
-      <workItem from="1667308912784" duration="4012000" />
+      <workItem from="1667308912784" duration="5829000" />
     </task>
     <servers />
   </component>

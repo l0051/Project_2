@@ -4,9 +4,8 @@
 
 int main()
 {
-    std::string postfix;
-    std::getline(std::cin, postfix);
-    postfix_to_infix(postfix);
+    std::string line;
+    std::getline(std::cin, line);
+    change_infix_or_postfix(line);
     return 0;
 }
-

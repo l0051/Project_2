@@ -113,7 +113,7 @@ bool is_valid_infix(const std::vector<std::string>& infix)
     return counter == 1 && par_counter == 0;
 }
 
-std::string infix_to_postfix_splited_to_str(const std::vector<std::string>& splited_infix)
+void infix_to_postfix(const std::vector<std::string>& splited_infix)
 {
     std::stack<std::string> st;
     std::string postfix;
@@ -141,7 +141,7 @@ std::string infix_to_postfix_splited_to_str(const std::vector<std::string>& spli
             }
             if (st.empty())
             {
-                return "-";
+                return;
             }
 
             st.pop();
@@ -156,20 +156,10 @@ std::string infix_to_postfix_splited_to_str(const std::vector<std::string>& spli
         postfix += st.top() + " ";
         st.pop();
     }
-    return postfix;
+    std::cout << postfix << std::endl;
 }
 
-std::string splited_to_line(const std::vector<std::string>& splited)
-{
-    std::string line;
-    for (const std::string& current : splited)
-    {
-        line += current + " ";
-    }
-    return line;
-}
-
-std::string postfix_to_infix_splited_to_str(const std::vector<std::string>& splited_postfix)
+void postfix_to_infix(const std::vector<std::string>& splited_postfix)
 {
     std::stack<std::string> st;
     std::string op;
@@ -194,35 +184,23 @@ std::string postfix_to_infix_splited_to_str(const std::vector<std::string>& spli
             st.push(current);
         }
     }
-    return st.top();
+    std::cout << st.top() << std::endl;
 }
 
-void infix_to_postfix(const std::string& infix)
+void change_infix_or_postfix(const std::string& line)
 {
-    std::vector<std::string> splited_infix = split(infix);
+    std::vector<std::string> splited_line = split(line);
 
-    if (!is_valid_infix(splited_infix))
+    if (is_valid_postfix(splited_line))
+    {
+        postfix_to_infix(splited_line);
+    }
+    else if (is_valid_infix(splited_line))
+    {
+        infix_to_postfix(splited_line);
+    }
+    else
     {
         std::cout << "Wrong input" << std::endl;
-        return;
     }
-
-    std::string postfix = infix_to_postfix_splited_to_str(splited_infix);
-
-    std::cout << postfix << std::endl;
-}
-
-void postfix_to_infix(const std::string& postfix)
-{
-    std::vector<std::string> splited_postfix = split(postfix);
-
-    if (!is_valid_postfix(splited_postfix))
-    {
-        std::cout << "Wrong input" << std::endl;
-        return;
-    }
-
-    std::string infix = postfix_to_infix_splited_to_str(splited_postfix);
-
-    std::cout << infix << std::endl;
 }
