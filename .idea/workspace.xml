@@ -12,18 +12,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bce69314-eaf5-4b60-a517-1970f9d40961" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/word_occupancy/src/word_occupancy.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infix_to_postfix/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infix_to_postfix/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lib.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/lib.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postfix_to_infix/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postfix_to_infix/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word_occupancy/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/word_occupancy/main.cpp" beforeDir="false" />
-    </list>
+    <list default="true" id="bce69314-eaf5-4b60-a517-1970f9d40961" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1666875796730</updated>
       <workItem from="1666875798093" duration="6057000" />
-      <workItem from="1667308912784" duration="1742000" />
+      <workItem from="1667308912784" duration="2114000" />
     </task>
     <servers />
   </component>
