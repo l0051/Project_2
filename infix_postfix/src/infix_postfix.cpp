@@ -18,7 +18,7 @@ int priority(const std::string& current_operator)
 
 bool is_operator(char symbol)
 {
-    std::string symbol_str = &""[symbol];
+    std::string symbol_str(1, symbol);
     return priority(symbol_str);
 }
 

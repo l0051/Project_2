@@ -33,6 +33,11 @@ void path_or_str(int argc, char **argv)
     else if (argc == 2)
     {
         std::ifstream file(argv[1]);
+        if (!file)
+        {
+            std::cout << "Invalid argument" << std::endl;
+            return;
+        }
         std::string line, text;
         while(getline(file, line))
         {
