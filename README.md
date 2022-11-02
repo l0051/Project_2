@@ -30,11 +30,15 @@ To build execute the following commands:
         4)  cmake ..
         5)  make
 
-To run execute on of the following commands:
 
-	1)  ./word_occup file_path
+
+To run:
+
+One of the options is to execute this command:
+	 ./word_occup file_path
 This way it will count occupancy of each word in that file.
 
-	2) ./word_occup
+Second option is to execute this command:
+	 ./word_occup
 Then you should enter one line as an input.
 This way it will count occupancy of each word in given line.
