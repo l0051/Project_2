@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/inf_post.dir/infix_postfix.cpp.o CMakeFiles/inf_post.dir/main.cpp.o -o inf_post 
