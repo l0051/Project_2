@@ -43,7 +43,7 @@ This way it will count occupancy of each word in that file.
 
 Second option is to execute this command:
 
-	   ./word_occup
+	./word_occup
 
 Then you should enter one line as an input.
 This way it will count occupancy of each word in given line.
